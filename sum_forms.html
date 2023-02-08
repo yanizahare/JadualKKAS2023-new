@@ -1,0 +1,979 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv=Content-Type content=text/html; charset=utf-8>
+<title>Timetable</title> 
+<LINK href="exportsty.css" type=text/css rel=stylesheet>
+</head>
+<body topmargin="0" leftmargin="0" bgcolor="#ffffff">
+
+
+<table width="100%" height="90%">
+<tr><td width="10%" vAlign="top">
+
+<SCRIPT language="javascript">
+function OpenPage(page) {
+	if (page != "-1") {
+		window.open(page, '_self');
+	}
+}
+</SCRIPT>
+
+
+<FORM name="menu" action="" method="post">
+<table>
+<tr>
+    <td>
+	<h3 align="left"><br>Academic year : 2022/2023</h3>
+    </td>
+</tr>
+
+<tr>
+    <td>
+    </td>
+</tr>
+
+<tr>
+   <td>
+	<div class="chooselabel">Classes</div>
+   </td>
+</tr>
+<tr>
+    <td>
+	<SELECT name="forms" onchange="javascript:OpenPage(document.menu.forms.value)"
+		style="width: 100px">
+	<OPTION value="-1"> </OPTION><OPTION value="index.html">DIPLOMA MOBILE TECHNOLOGY 1</OPTION><OPTION value="form_001.html">DIPLOMA MOBILE TECHNOLOGY 3</OPTION><OPTION value="form_002.html">DIPLOMA MOBILE TECHNOLOGY 5 (WBL)</OPTION><OPTION value="form_003.html">DIPLOMA MOBILE TECHNOLOGY 6 (WBL)</OPTION><OPTION value="form_004.html">DIPLOMA TEKNOLOGI TELEKOMUNIKASI 1</OPTION><OPTION value="form_005.html">DIPLOMA TEKNOLOGI TELEKOMUNIKASI 3</OPTION><OPTION value="form_006.html">DIPLOMA TEKNOLOGI TELEKOMUNIKASI 5 (WBL)</OPTION><OPTION value="form_007.html">SIJIL TEKNOLOGI TELEKOMUNIKASI 2</OPTION>
+	</SELECT>
+    </td>
+</tr>
+
+
+
+
+<tr>
+   <td>
+	<div class="chooselabel">Teachers</div>
+   </td>
+</tr>
+<tr>
+    <td>
+	<SELECT name="teachers" onchange="javascript:OpenPage(document.menu.teachers.value)"
+		style="width: 100px">
+	<OPTION value="-1"> </OPTION><OPTION value="teacher_000.html">NUR ILYANI BINTI ZAHARE</OPTION><OPTION value="teacher_001.html">SITI RAFIDAH BINTI ABDUL SAREF</OPTION><OPTION value="teacher_002.html">AINAL KAMALIA BINTI MOHD RAHIM</OPTION><OPTION value="teacher_003.html">AHMAD KHAIRULNIZAM BIN ZULKIFLI</OPTION><OPTION value="teacher_004.html">HAFIZ BIN BAHARUDDIN</OPTION><OPTION value="teacher_005.html">MOHD FARIZAL BIN MD MARZUKI</OPTION><OPTION value="teacher_006.html">MUHAMMAD SHARIF BIN ABDULLAH</OPTION><OPTION value="teacher_007.html">MAIZAR BIN MUHAMAD</OPTION><OPTION value="teacher_008.html">NUR AIZYA BINTI MAPPISSAMMENG</OPTION><OPTION value="teacher_009.html">NABIL BINTI YAACOB</OPTION><OPTION value="teacher_010.html">ROZAIMI BINTI RASI</OPTION><OPTION value="teacher_011.html">RAZALI BIN SADELI</OPTION><OPTION value="teacher_012.html">SITI HASANAH BINTI AHMAD SHAH</OPTION><OPTION value="teacher_013.html">SHARIFAH JULIANA BINTI YAAKUB</OPTION><OPTION value="teacher_014.html">THILAGAVATHI A/P MALAYANDY</OPTION><OPTION value="teacher_015.html">ZAIDAH BINTI MUSTAFA</OPTION><OPTION value="teacher_016.html">MUHAMMAD KHAIRUDDEN BIN SULAIMAN</OPTION>
+	</SELECT>
+    </td>
+</tr>
+
+
+<tr>
+   <td>
+	<div class="chooselabel">Classrooms</div>
+   </td>
+</tr>
+<tr>
+    <td>
+	<SELECT name="rooms" onchange="javascript:OpenPage(document.menu.rooms.value)"
+		style="width: 100px">
+	<OPTION value="-1"> </OPTION><OPTION value="room_000.html">DEWAN KULIAH</OPTION><OPTION value="room_001.html">MAKMAL KOMPUTER AM </OPTION><OPTION value="room_002.html">MAKMAL PENYUNTINGAN AV</OPTION><OPTION value="room_003.html">MAKMAL BAIK PULIH TELEFON</OPTION><OPTION value="room_004.html">MAKMAL DIGITAL</OPTION><OPTION value="room_005.html">MAKMAL ELEKTRIK ELEKTRONIK</OPTION><OPTION value="room_006.html">MAKMAL REKABENTUK GRAFIK</OPTION><OPTION value="room_007.html">MAKMAL SAINS</OPTION><OPTION value="room_008.html">MAKMAL TELEKOMUNIKASI</OPTION><OPTION value="room_009.html">PERPUSTAKAAN</OPTION><OPTION value="room_010.html">MAKMAL BAHASA</OPTION><OPTION value="room_011.html">MAKMAL ANIMASI</OPTION>
+	</SELECT>
+    </td>
+</tr>
+
+
+<tr>
+   <td>
+	<div class="chooselabel">Summary timetables</div>
+   </td>
+</tr>
+
+<tr>
+    <td>
+	<SELECT name="summary" onchange="javascript:OpenPage(document.menu.summary.value)"
+		style="width: 100px">
+	<OPTION value="-1"> </OPTION><OPTION selected value="sum_forms.html">Classes</OPTION><OPTION value="sum_teachers.html">Teachers</OPTION><OPTION value="sum_rooms.html">Classrooms</OPTION>
+	</SELECT>
+    </td>
+</tr>
+
+<tr>
+    <td>
+    </td>
+</tr>
+
+
+<tr>
+   <td>
+	
+   </td>
+</tr>
+
+<tr>
+<td>
+	
+</td>
+</tr>
+</table>
+
+
+</FORM>
+</td><td width="100%" height="90%" valign="top">
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv=Content-Type content=text/html; charset=utf-8>
+<title>Summary timetable of classes</title>
+<STYLE>
+<!--
+ TD {text-align: Center}
+-->
+</STYLE>
+</head>
+
+
+<body bgcolor="#FFFFFF">
+<h3 align="center"><font color="#800040"><br>Academic year : 2022/2023</font></h3>
+<h3 align="center"><font color="#0000A0">Summary timetable of classes</font></h3>
+<h3 align="center"><font color="#0000A0"></font></h3>
+
+<br><table width="3050"border="1" bordercolor="#808080" cellspacing="0" cellpadding="0">
+<tr>
+<td ><br></td>
+<td colspan="10" height="3" ><p align="center">Monday</td><td colspan="10" height="3" ><p align="center">Tuesday</td><td colspan="10" height="3" ><p align="center">Wednesday</td><td colspan="10" height="3" ><p align="center">Thursday</td><td colspan="10" height="3" ><p align="center">Friday</td></tr><tr><td width="50" height="60" ><br></td>
+<td width="60"  height="12" >0</td>
+<td width="60"  height="12" >1</td>
+<td width="60"  height="12" >2</td>
+<td width="60"  height="12" >3</td>
+<td width="60"  height="12" >4</td>
+<td width="60"  height="12" >5</td>
+<td width="60"  height="12" >6</td>
+<td width="60"  height="12" >7</td>
+<td width="60"  height="12" >8</td>
+<td width="60"  height="12" >9</td>
+<td width="60"  height="12" >0</td>
+<td width="60"  height="12" >1</td>
+<td width="60"  height="12" >2</td>
+<td width="60"  height="12" >3</td>
+<td width="60"  height="12" >4</td>
+<td width="60"  height="12" >5</td>
+<td width="60"  height="12" >6</td>
+<td width="60"  height="12" >7</td>
+<td width="60"  height="12" >8</td>
+<td width="60"  height="12" >9</td>
+<td width="60"  height="12" >0</td>
+<td width="60"  height="12" >1</td>
+<td width="60"  height="12" >2</td>
+<td width="60"  height="12" >3</td>
+<td width="60"  height="12" >4</td>
+<td width="60"  height="12" >5</td>
+<td width="60"  height="12" >6</td>
+<td width="60"  height="12" >7</td>
+<td width="60"  height="12" >8</td>
+<td width="60"  height="12" >9</td>
+<td width="60"  height="12" >0</td>
+<td width="60"  height="12" >1</td>
+<td width="60"  height="12" >2</td>
+<td width="60"  height="12" >3</td>
+<td width="60"  height="12" >4</td>
+<td width="60"  height="12" >5</td>
+<td width="60"  height="12" >6</td>
+<td width="60"  height="12" >7</td>
+<td width="60"  height="12" >8</td>
+<td width="60"  height="12" >9</td>
+<td width="60"  height="12" >0</td>
+<td width="60"  height="12" >1</td>
+<td width="60"  height="12" >2</td>
+<td width="60"  height="12" >3</td>
+<td width="60"  height="12" >4</td>
+<td width="60"  height="12" >5</td>
+<td width="60"  height="12" >6</td>
+<td width="60"  height="12" >7</td>
+<td width="60"  height="12" >8</td>
+<td width="60"  height="12" >9</td>
+</tr>
+<tr><td width="50" height="60" >DIPLOMA MOBILE TECHNOLOGY 1</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" # >DES10023 MEASUREMENT DEVICES<br>MAIZAR BIN MUHAMAD<br>MAKMAL DIGITAL<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" # >DES10023 MEASUREMENT DEVICES<br>MAIZAR BIN MUHAMAD<br>MAKMAL DIGITAL<br>Entire class</td>
+<td width="60" colspan="2" height="60" # >DES10013 ELECTRICAL TECHNOLOGY<br>AINAL KAMALIA BINTI MOHD RAHIM/ MOHD FARIZAL BIN MD MARZUKI<br>MAKMAL DIGITAL<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="2" height="60" # >DEI10013 SEMICONDUCTOR DEVICES<br>MUHAMMAD KHAIRUDDEN BIN SULAIMAN<br>MAKMAL DIGITAL<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >DBM10142 MATHEMATICS<br>SITI RAFIDAH BINTI ABDUL SAREF/ THILAGAVATHI A/P MALAYANDY<br>DEWAN KULIAH<br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >DBS10042 SCIENCE<br>ROZAIMI BINTI RASI<br>MAKMAL SAINS<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="2" height="60" # >DES10023 MEASUREMENT DEVICES<br>MAIZAR BIN MUHAMAD<br>MAKMAL DIGITAL<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="2" height="60" # >DES10013 ELECTRICAL TECHNOLOGY<br>AINAL KAMALIA BINTI MOHD RAHIM/ MOHD FARIZAL BIN MD MARZUKI<br>MAKMAL ELEKTRIK ELEKTRONIK<br>Entire class</td>
+<td width="60"  height="60" # >PERJUMPAAN PA<br>THILAGAVATHI A/P MALAYANDY<br><br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >MPU22032 ENTREPENEURSHIP<br>NUR AIZYA BINTI MAPPISSAMMENG<br>MAKMAL KOMPUTER AM <br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="2" height="60" # >DEI10013 SEMICONDUCTOR DEVICES<br>MUHAMMAD KHAIRUDDEN BIN SULAIMAN<br>MAKMAL KOMPUTER AM <br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+</tr>
+<tr><td width="50" height="60" ><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+</tr>
+<tr><td width="50" height="60" >DIPLOMA MOBILE TECHNOLOGY 3</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" # >DEI10023 C PROGAMMING <br>NABIL BINTI YAACOB<br>MAKMAL BAHASA<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" # >DEI10023 C PROGAMMING <br>NABIL BINTI YAACOB<br>MAKMAL BAHASA<br>Entire class</td>
+<td width="60" colspan="2" height="60" # >DEM30033 MOBILE DEVICES ARCHITECTURE<br>MAIZAR BIN MUHAMAD<br>MAKMAL ANIMASI<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >DEM30042 WIREFRAME DESIGN<br>ROZAIMI BINTI RASI<br>MAKMAL BAHASA<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" # >DEI10023 C PROGAMMING <br>NABIL BINTI YAACOB<br>MAKMAL BAHASA<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" # >DEI10023 C PROGAMMING <br>NABIL BINTI YAACOB<br>MAKMAL BAHASA<br>Entire class</td>
+<td width="60" colspan="2" height="60" # >DEM30053 MOBILE REPAIRING APPLE PHONE<br>RAZALI BIN SADELI/ MAIZAR BIN MUHAMAD<br>MAKMAL BAIK PULIH TELEFON<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >MPU21042 PENGHAYATAN ETIKA DAN PERADABAN<br>SITI HASANAH BINTI AHMAD SHAH/ THILAGAVATHI A/P MALAYANDY<br>DEWAN KULIAH<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >DEK30032 ELECTRONIC COMPUTER AIDED DESIGN<br>RAZALI BIN SADELI<br>MAKMAL KOMPUTER AM <br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" # >DUE10102 ESSENTIAL ENGLISH<br>THILAGAVATHI A/P MALAYANDY<br>DEWAN KULIAH<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="2" height="60" # >DUE10102 ESSENTIAL ENGLISH<br>THILAGAVATHI A/P MALAYANDY<br>DEWAN KULIAH<br>Entire class</td>
+<td width="60"  height="60" # >PERJUMPAAN PA<br>ROZAIMI BINTI RASI<br><br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >DEM30053 MOBILE REPAIRING APPLE PHONE<br>RAZALI BIN SADELI/ MAIZAR BIN MUHAMAD<br>MAKMAL BAIK PULIH TELEFON<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" # >DEM30033 MOBILE DEVICES ARCHITECTURE<br>MAIZAR BIN MUHAMAD<br>MAKMAL ELEKTRIK ELEKTRONIK<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="2" height="60" # >DEM30033 MOBILE DEVICES ARCHITECTURE<br>MAIZAR BIN MUHAMAD<br>MAKMAL ELEKTRIK ELEKTRONIK<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+</tr>
+<tr><td width="50" height="60" ><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+</tr>
+<tr><td width="50" height="60" >DIPLOMA MOBILE TECHNOLOGY 5 (WBL)</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >DMT50110 MOBILE TECHNOLOGY FOR SMARTPHONE AND TABLET<br>RAZALI BIN SADELI<br><br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >DMT5023 SALES AND MARKETING <br>NUR AIZYA BINTI MAPPISSAMMENG<br><br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+</tr>
+<tr><td width="50" height="60" ><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+</tr>
+<tr><td width="50" height="60" >DIPLOMA MOBILE TECHNOLOGY 6 (WBL)</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >DMT 6025 SOFTWARE TROUBLESHOOTING<br>NUR AIZYA BINTI MAPPISSAMMENG<br><br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >DMT 6018 INTRODUCTION TO MOTHERBOARD (MOBO) TROUBLESHOOTING<br>RAZALI BIN SADELI<br><br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+</tr>
+<tr><td width="50" height="60" ><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+</tr>
+<tr><td width="50" height="60" >DIPLOMA TEKNOLOGI TELEKOMUNIKASI 1</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" # >DES10023 MEASUREMENT DEVICES<br>MOHD FARIZAL BIN MD MARZUKI/ AINAL KAMALIA BINTI MOHD RAHIM<br>MAKMAL ELEKTRIK ELEKTRONIK<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" # >DES10023 MEASUREMENT DEVICES<br>MOHD FARIZAL BIN MD MARZUKI/ AINAL KAMALIA BINTI MOHD RAHIM<br>MAKMAL ELEKTRIK ELEKTRONIK<br>Entire class</td>
+<td width="60" colspan="2" height="60" # >DEI10013 SEMICONDUCTOR DEVICES<br>MUHAMMAD KHAIRUDDEN BIN SULAIMAN<br>MAKMAL ELEKTRIK ELEKTRONIK<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="2" height="60" # >DEV10022 OCCUPATIONAL SAFETY AND HEALTH<br>MUHAMMAD SHARIF BIN ABDULLAH<br>MAKMAL PENYUNTINGAN AV<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >DBM10142 MATHEMATICS<br>SITI RAFIDAH BINTI ABDUL SAREF/ THILAGAVATHI A/P MALAYANDY<br>DEWAN KULIAH<br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >MPU22032 ENTREPENEURSHIP<br>NUR AIZYA BINTI MAPPISSAMMENG<br>MAKMAL KOMPUTER AM <br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" # >DES10023 MEASUREMENT DEVICES<br>MOHD FARIZAL BIN MD MARZUKI/ AINAL KAMALIA BINTI MOHD RAHIM<br>MAKMAL ELEKTRIK ELEKTRONIK<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" # >DES10023 MEASUREMENT DEVICES<br>MOHD FARIZAL BIN MD MARZUKI/ AINAL KAMALIA BINTI MOHD RAHIM<br>MAKMAL ELEKTRIK ELEKTRONIK<br>Entire class</td>
+<td width="60" colspan="2" height="60" # >DES10013 ELECTRICAL TECHNOLOGY<br>AINAL KAMALIA BINTI MOHD RAHIM/ MOHD FARIZAL BIN MD MARZUKI<br>MAKMAL ELEKTRIK ELEKTRONIK<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" # >DBS10042 SCIENCE<br>NABIL BINTI YAACOB<br>MAKMAL SAINS<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="2" height="60" # >DBS10042 SCIENCE<br>NABIL BINTI YAACOB<br>MAKMAL SAINS<br>Entire class</td>
+<td width="60"  height="60" # >PERJUMPAAN PA<br>NUR ILYANI BINTI ZAHARE<br><br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="2" height="60" # >DES10013 ELECTRICAL TECHNOLOGY<br>AINAL KAMALIA BINTI MOHD RAHIM/ MOHD FARIZAL BIN MD MARZUKI<br>MAKMAL DIGITAL<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+</tr>
+<tr><td width="50" height="60" ><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+</tr>
+<tr><td width="50" height="60" >DIPLOMA TEKNOLOGI TELEKOMUNIKASI 3</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >MPU23152 PENDIDIKAN ISLAM<br>SITI HASANAH BINTI AHMAD SHAH<br>DEWAN KULIAH<br>Group 1</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >DEK30032 ELECTRONIC COMPUTER AIDED DESIGN<br>RAZALI BIN SADELI<br>MAKMAL KOMPUTER AM <br>Entire class</td>
+<td width="60" colspan="2" height="60" # >DEK30043 ICT AND NETWORK SECURITY<br>HAFIZ BIN BAHARUDDIN<br>MAKMAL PENYUNTINGAN AV<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >DEK30023 MICROCONTROLLER<br>MUHAMMAD KHAIRUDDEN BIN SULAIMAN<br>MAKMAL PENYUNTINGAN AV<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >DEM30053 MOBILE REPAIRING APPLE PHONE<br>RAZALI BIN SADELI/ NABIL BINTI YAACOB<br>MAKMAL BAIK PULIH TELEFON<br>Entire class</td>
+<td width="60" colspan="2" height="60" # >DUE10102 ESSENTIAL ENGLISH<br>THILAGAVATHI A/P MALAYANDY<br>DEWAN KULIAH<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" # >DUE10102 ESSENTIAL ENGLISH<br>THILAGAVATHI A/P MALAYANDY<br>DEWAN KULIAH<br>Entire class</td>
+<td width="60" colspan="2" height="60" # >DEK30053 OPTICAL FIBER COMMUNICATION<br>NUR ILYANI BINTI ZAHARE<br>MAKMAL TELEKOMUNIKASI<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" # >DTT4034 ICT AND NETWORK SECURITY<br>HAFIZ BIN BAHARUDDIN<br>MAKMAL PENYUNTINGAN AV<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="2" height="60" # >DEK30043 ICT AND NETWORK SECURITY<br>HAFIZ BIN BAHARUDDIN<br>MAKMAL PENYUNTINGAN AV<br>Entire class</td>
+<td width="60"  height="60" # >PERJUMPAAN PA<br>SITI RAFIDAH BINTI ABDUL SAREF<br><br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >DEK30053 OPTICAL FIBER COMMUNICATION<br>NUR ILYANI BINTI ZAHARE<br>MAKMAL TELEKOMUNIKASI<br>Entire class</td>
+<td width="60" colspan="2" height="60" # >DEK30023 MICROCONTROLLER<br>MUHAMMAD KHAIRUDDEN BIN SULAIMAN<br>MAKMAL BAHASA<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="2" height="60" # >DEM30053 MOBILE REPAIRING APPLE PHONE<br>RAZALI BIN SADELI/ NABIL BINTI YAACOB<br>MAKMAL BAIK PULIH TELEFON<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+</tr>
+<tr><td width="50" height="60" ><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >MPU23162 PENDIDIKAN MORAL<br>THILAGAVATHI A/P MALAYANDY<br>PERPUSTAKAAN<br>Group 2</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+</tr>
+<tr><td width="50" height="60" >DIPLOMA TEKNOLOGI TELEKOMUNIKASI 5 (WBL)</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >DTT50212 TELECOMMUNICATION WIRED/WIRELESS INSTALLATION<br>NUR ILYANI BINTI ZAHARE/ SITI RAFIDAH BINTI ABDUL SAREF<br><br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+</tr>
+<tr><td width="50" height="60" ><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+</tr>
+<tr><td width="50" height="60" >SIJIL TEKNOLOGI TELEKOMUNIKASI 2</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >SBC10012 APLIKASI KOMPUTER<br>SHARIFAH JULIANA BINTI YAAKUB<br>MAKMAL KOMPUTER AM <br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >SEK20013 TELEKOMUNIKASI<br>NUR ILYANI BINTI ZAHARE<br>DEWAN KULIAH<br>Entire class</td>
+<td width="60" colspan="2" height="60" # >MPU12012 KEUSAHAWANAN<br>NUR AIZYA BINTI MAPPISSAMMENG<br>MAKMAL KOMPUTER AM <br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" # >MPU12012 KEUSAHAWANAN<br>NUR AIZYA BINTI MAPPISSAMMENG<br>MAKMAL KOMPUTER AM <br>Entire class</td>
+<td width="60" colspan="2" height="60" # >SEE20063 SISTEM DIGIT<br>MOHD FARIZAL BIN MD MARZUKI/ AINAL KAMALIA BINTI MOHD RAHIM<br>MAKMAL DIGITAL<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >SEE20072 LUKISAN TERBANTU KOMPUTER<br>MUHAMMAD KHAIRUDDEN BIN SULAIMAN<br>MAKMAL BAHASA<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" # >SEK20023 KOMUNIKASI DATA<br>SHARIFAH JULIANA BINTI YAAKUB/ NUR ILYANI BINTI ZAHARE<br>MAKMAL TELEKOMUNIKASI<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" # >SEK20023 KOMUNIKASI DATA<br>SHARIFAH JULIANA BINTI YAAKUB/ NUR ILYANI BINTI ZAHARE<br><br>Entire class</td>
+<td width="60" colspan="2" height="60" # >SEK20033 SISTEM KOMPUTER<br>HAFIZ BIN BAHARUDDIN/ NABIL BINTI YAACOB<br>DEWAN KULIAH<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" # >SEK20023 KOMUNIKASI DATA<br>SHARIFAH JULIANA BINTI YAAKUB/ NUR ILYANI BINTI ZAHARE<br><br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="2" height="60" # >SEK20023 KOMUNIKASI DATA<br>SHARIFAH JULIANA BINTI YAAKUB/ NUR ILYANI BINTI ZAHARE<br>MAKMAL KOMPUTER AM <br>Entire class</td>
+<td width="60"  height="60" # >PERJUMPAAN PA<br>SHARIFAH JULIANA BINTI YAAKUB<br><br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="3" height="60" # >SEK20033 SISTEM KOMPUTER<br>HAFIZ BIN BAHARUDDIN/ NABIL BINTI YAACOB<br>MAKMAL DIGITAL<br>Entire class</td>
+<td width="60" colspan="2" height="60" # >SEE20063 SISTEM DIGIT<br>MOHD FARIZAL BIN MD MARZUKI/ AINAL KAMALIA BINTI MOHD RAHIM<br>MAKMAL DIGITAL<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60" colspan="2" height="60" # >SEK20013 TELEKOMUNIKASI<br>NUR ILYANI BINTI ZAHARE<br>MAKMAL TELEKOMUNIKASI<br>Entire class</td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+</tr>
+<tr><td width="50" height="60" ><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+<td width="60"  height="60" #C0C0C0><br></td>
+</tr>
+</table>
+</body></html>
+
+</td></tr>
+</table>
+
+<p align="right"><a href="sum_teachers.html">Next Page</a></p>
+<p align="center">
+<a href="index.html">Classes</a>&nbsp;
+<a href="teacher_000.html">Teachers</a>&nbsp;
+<a href="room_000.html">Classrooms</a>&nbsp;
+<a href="sum_forms.html">Summary timetable of classes</a>&nbsp;
+<a href="sum_teachers.html">Summary table of teachers</a>&nbsp;
+<a href="sum_rooms.html">Summary timetable of classrooms</a>&nbsp;
+
+</p>
+
+<p>Last change: 8/2/2023 4:33:08 PM </br>
+
+<a href="http://www.aScTimeTables.com">http://www.aScTimeTables.com</a></p>
+
+</br>
+
+</body>
+</html>
+
